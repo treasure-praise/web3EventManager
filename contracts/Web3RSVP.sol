@@ -15,4 +15,10 @@ contract Web3RSVP {
         address[] claimedRSVPs;
         bool paidOut;
     }
+
+     //mapping mechanism allows us to store and easily look up events by some identifier. This code below : defines a relationship with, a unique eventID to the struct we just defined that is associated with that event.
+    mapping(bytes32 => CreateEvent) public idToEvent;
+
+
+    
 }    
